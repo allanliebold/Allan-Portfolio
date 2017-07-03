@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Allan Liebold</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link rel="stylesheet" href="vendor/styles/reset.css">
+    <link rel="stylesheet" href="styles/icons.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/layout.css">
+    <link rel="stylesheet" href="styles/modules.css">
+
+    <script id="about-template" type="text/x-handlebars-template">
+      <li>
+        <p>{{year}}</p>
+        <p>{{job}}</p>
+        <p>Location: {{location}}</p>
+      </li>
+    </script>
+  </head>
+  <body>
+    <header>
+      <nav id="top-nav">
+        <span class="icon-menu"></span>
+        <ul>
+          <li data-content="about"><a href="#">About</a></li>
+          <li data-content="projects"><a href="#">Projects</a></li>
+          <li data-content="contact"><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="fill-bar">
+      </div>
+
+      <section id="title-screen">
+        <h1><p>Allan</p>
+        <p>Liebold</p></h1>
+        <ul>
+        <nav id="main-menu">
+            <li class="menu-select" data-content="projects"><a href="#">Play</a></li>
+            <li class="menu-select" data-content="story"><a href="#">Story</a></li>
+            <li class="menu-select">Settings</li>
+          </ul>
+        </nav>
+      </section>
+
+      <div class="fill-bar">
+      </div>
+      <div class="fill-bar">
+      </div>
+
+      <section id="about" class="screen">
+          <h2>The Story So Far...</h2>
+          <ul>
+
+          </ul>
+
+      </section>
+      <section id="projects" class="screen">
+        <article>
+          <h2>Projects</h2>
+          <ul>
+            <li>Name of Project
+            <p><span class="left arrow"></span>
+              <img src="http://placehold.it/450x250">
+              <span class="right arrow"></span>
+            </p>
+            <p>created on: </p>
+            <p>Description text goes here.</li>
+          </ul>
+        </article>
+      </section>
+      <section id="contact" class="screen">
+        <article>
+          <h2>Contact Me!</h2>
+          <ul>
+            <li>name@email.com</li>
+            <li>Facebook</li>
+          </ul>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <span>&copy; 2017 AJL</span>
+    </footer>
+
+    <script src="vendor/scripts/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.min.js"></script>
+    <script src="scripts/controller.js"></script>
+    <script src="scripts/aboutItems.js"></script>
+    <script src="scripts/about.js"></script>
+  </body>
+</html>

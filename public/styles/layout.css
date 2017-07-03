@@ -1,0 +1,109 @@
+header {
+  margin: auto;
+  height: 5px;
+}
+
+.icon-menu {
+  margin: 15px;
+  float: right;
+  font-size: 3em;
+}
+
+#top-nav span:hover {
+  color: #000;
+  text-shadow: 0px 0px 10px #fff;
+}
+
+#top-nav span:hover #top-nav ul {
+  display: block;
+  float: right;
+  margin: 55px 20px;
+  width: 125px;
+}
+
+.icon-menu:hover li {
+  line-height: 3;
+}
+
+#top-nav ul {
+  display: none;
+  position: absolute;
+  margin: 5px 25px;
+  right: 0;
+  background-color: #555;
+}
+
+#top-nav li {
+  display: inline;
+  font-size: 80%;
+  margin: 20px;
+}
+
+.selected {
+  cursor: default;
+  text-shadow: none;
+  color: #000;
+}
+
+.selected:hover {
+  text-shadow: none;
+}
+
+.fill-bar {
+  height: 150px;
+}
+
+#title-screen {
+  margin: auto;
+  text-align: center;
+  width: 55%;
+}
+
+#main-menu {
+  margin: auto;
+  width: 25%;
+}
+
+#main-menu li {
+  margin: 5px;
+  text-align: left;
+}
+
+.screen {
+  display: none;
+  top: 0;
+  position: absolute;
+  height: 600px;
+  width: 95%;
+  margin-top: 55px;
+  background-image: url("/../img/stars.jpg");
+  background-color: #000;
+  overflow: auto;
+}
+
+.screen img {
+  margin: 0px 20px;
+  max-width: 100%;
+}
+
+.screen h2 {
+  margin-top: 100px;
+  margin-bottom: 40px;
+  font-size: 3vh;
+}
+
+.screen li {
+  margin: 40px;
+  line-height: 1.5;
+}
+
+.show {
+  display: visible;
+}
+
+footer {
+  margin: auto;
+  padding: 5px;
+  height: 20px;
+  width: 95%;
+}
